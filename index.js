@@ -156,7 +156,7 @@ function version(program, projectPath) {
 				match,
 				cg1
 			) {
-				const split = appPkg.split('.');
+				const split = appPkg.version.split('.');
 				const major = parseInt(split[0]) * 1000;
 				const minor = parseInt(split[1]) * 1000;
 				const patch = parseInt(split[2]);
