@@ -157,7 +157,7 @@ function version(program, projectPath) {
 				cg1
 			) {
 				const split = appPkg.version.split('.');
-				const major = parseInt(split[0], 10) * 1000;
+				const major = parseInt(split[0], 10) * 10000;
 				const minor = parseInt(split[1], 10) * 100;
 				const patch = parseInt(split[2], 10);
 				const newVersionCodeNumber = major + minor + patch;
