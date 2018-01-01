@@ -161,6 +161,8 @@ function version(program, projectPath) {
 				const minor = parseInt(split[1]) * 1000;
 				const patch = parseInt(split[2]);
 				const newVersionCodeNumber = major + minor + patch;
+
+				return "versionCode " + newVersionCodeNumber;
 			});
 
 			fs.writeFileSync(programOpts.android, gradleFile);
